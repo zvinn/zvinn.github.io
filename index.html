@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohamed Saad (zvinn) | Full-Stack Architect & AI Systems Engineer</title>
+  <meta name="description" content="Executive portfolio & engineering case studies of Mohamed Saad (zvinn) - Co-founder & CTO at Fixsy, Creator of Acadify LMS. Specialized in Next.js, React, Flutter, and AI Systems." />
+  <meta name="keywords" content="Mohamed Saad, zvinn, Full-Stack Engineer, CTO, Fixsy, Acadify, Next.js, React, Flutter, Clean Architecture, AI Systems, Portfolio" />
+  <meta name="author" content="Mohamed Saad" />
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://zvinn.github.io/" />
+  <meta property="og:title" content="Mohamed Saad (zvinn) | Full-Stack Architect & AI Systems Engineer" />
+  <meta property="og:description" content="Executive portfolio & engineering case studies - Co-founder & CTO @ Fixsy, Creator of Acadify LMS." />
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/101294247?v=4" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            brand: {
+              50: '#ecfdf5',
+              100: '#d1fae5',
+              400: '#34d399',
+              500: '#10b981',
+              600: '#059669',
+              700: '#047857',
+            },
+            dark: {
+              950: '#090d16',
+              900: '#0d1322',
+              850: '#121a2d',
+              800: '#182239',
+              700: '#233152',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    .glass-panel {
+      background: rgba(18, 26, 45, 0.7);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .glass-card {
+      background: rgba(18, 26, 45, 0.5);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .glass-card:hover {
+      border-color: rgba(16, 185, 129, 0.3);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px -10px rgba(16, 185, 129, 0.15);
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, #ffffff 30%, #a7f3d0 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    @media print {
+      body { background: white !important; color: black !important; }
+      .no-print { display: none !important; }
+      .glass-card, .glass-panel { background: none !important; border: 1px solid #ddd !important; box-shadow: none !important; }
+      .text-gray-300, .text-gray-400 { color: #333 !important; }
+      .text-white { color: #000 !important; }
+      .gradient-text { -webkit-text-fill-color: #000 !important; }
+    }
+  </style>
+</head>
+<body class="bg-dark-950 text-gray-200 font-sans antialiased selection:bg-brand-500 selection:text-white min-h-screen">
+
+  <div class="fixed inset-0 overflow-hidden pointer-events-none z-0">
+    <div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[700px] h-[500px] bg-brand-500/10 rounded-full blur-[140px]"></div>
+    <div class="absolute top-[45%] -left-32 w-[500px] h-[500px] bg-indigo-500/5 rounded-full blur-[130px]"></div>
+    <div class="absolute top-[75%] -right-32 w-[600px] h-[600px] bg-brand-500/5 rounded-full blur-[150px]"></div>
+  </div>
+
+  <header class="fixed top-0 inset-x-0 z-50 glass-panel border-b border-white/5 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <a href="#" class="flex items-center gap-3.5 group">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-brand-500 to-emerald-700 flex items-center justify-center font-mono font-bold text-white shadow-lg shadow-brand-500/20 group-hover:scale-105 transition-transform">
+          MS
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="font-bold text-white tracking-tight group-hover:text-brand-400 transition-colors">Mohamed Saad</span>
+            <span class="font-mono text-xs px-2 py-0.5 rounded-full bg-white/5 text-gray-400 border border-white/10">zvinn</span>
+          </div>
+          <p class="text-xs text-gray-400 flex items-center gap-1.5 mt-0.5">
+            <span class="w-1.5 h-1.5 rounded-full bg-brand-400 animate-pulse"></span>
+            CTO & Full-Stack Systems Architect
+          </p>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">
+        <a href="#overview" class="hover:text-white transition-colors">Overview</a>
+        <a href="#case-studies" class="hover:text-white transition-colors">Case Studies</a>
+        <a href="#experience" class="hover:text-white transition-colors">Experience</a>
+        <a href="#skills" class="hover:text-white transition-colors">Skills Matrix</a>
+        <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-3 no-print">
+        <button onclick="window.print()" class="hidden sm:inline-flex items-center gap-2 px-3.5 py-2 text-xs font-semibold rounded-lg bg-white/5 hover:bg-white/10 text-gray-200 border border-white/10 transition-all">
+          <i data-lucide="printer" class="w-4 h-4"></i>
+          <span>Save CV / Print</span>
+        </button>
+        <a href="#contact" class="inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold rounded-lg bg-brand-500 hover:bg-brand-600 text-white shadow-md shadow-brand-500/25 transition-all">
+          <i data-lucide="mail" class="w-4 h-4"></i>
+          <span>Hire / Connect</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="relative z-10 pt-28">
+
+    <!-- HERO SECTION -->
+    <section id="overview" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-8 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-400 text-xs font-semibold tracking-wide">
+            <span class="w-2 h-2 rounded-full bg-brand-400 animate-ping"></span>
+            AVAILABLE FOR CTO, ARCHITECT & ADVISORY ROLES
+          </div>
+
+          <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-[1.15]">
+            Engineering Robust <br />
+            <span class="gradient-text">Software Systems</span> & <br />
+            Scalable Digital Products.
+          </h1>
+
+          <p class="text-lg sm:text-xl text-gray-400 max-w-2xl leading-relaxed font-normal">
+            I am a <strong class="text-white">Full-Stack Architect & AI Systems Engineer</strong> with 4+ years of hands-on leadership shipping enterprise-grade web platforms and mobile ecosystems. Co-founder & CTO at <span class="text-brand-400 font-semibold">Fixsy</span>, and creator of <span class="text-brand-400 font-semibold">Acadify LMS</span>.
+          </p>
+
+          <div class="pt-4 grid grid-cols-2 sm:grid-cols-4 gap-4">
+            <div class="glass-card p-4 rounded-xl border border-white/5">
+              <span class="block text-2xl sm:text-3xl font-extrabold text-white font-mono">4+</span>
+              <span class="text-xs text-gray-400 font-medium mt-1 block">Years Shipping Prod Code</span>
+            </div>
+            <div class="glass-card p-4 rounded-xl border border-white/5">
+              <span class="block text-2xl sm:text-3xl font-extrabold text-brand-400 font-mono">3+</span>
+              <span class="text-xs text-gray-400 font-medium mt-1 block">Commercial SaaS Products</span>
+            </div>
+            <div class="glass-card p-4 rounded-xl border border-white/5">
+              <span class="block text-2xl sm:text-3xl font-extrabold text-white font-mono">99.9%</span>
+              <span class="text-xs text-gray-400 font-medium mt-1 block">Architecture Reliability</span>
+            </div>
+            <div class="glass-card p-4 rounded-xl border border-white/5">
+              <span class="block text-2xl sm:text-3xl font-extrabold text-brand-400 font-mono">60+</span>
+              <span class="text-xs text-gray-400 font-medium mt-1 block">Production Repositories</span>
+            </div>
+          </div>
+
+          <div class="pt-4 flex flex-wrap items-center gap-4 no-print">
+            <a href="#case-studies" class="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl bg-brand-500 hover:bg-brand-600 text-white font-semibold text-sm shadow-xl shadow-brand-500/20 transition-all hover:scale-[1.02]">
+              <i data-lucide="layers" class="w-4 h-4"></i>
+              <span>Explore Case Studies</span>
+            </a>
+            <a href="https://github.com/zvinn" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl bg-white/5 hover:bg-white/10 text-gray-200 border border-white/10 font-semibold text-sm transition-all">
+              <i data-lucide="github" class="w-4 h-4"></i>
+              <span>GitHub Profile</span>
+            </a>
+            <a href="mailto:mhamed.saad.ibrahim@gmail.com" class="inline-flex items-center gap-2.5 px-5 py-3.5 rounded-xl text-gray-400 hover:text-white text-sm font-medium transition-colors">
+              <i data-lucide="mail" class="w-4 h-4"></i>
+              <span>Direct Inquiries</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-4">
+          <div class="glass-panel p-6 sm:p-8 rounded-2xl border border-white/10 relative overflow-hidden shadow-2xl">
+            <div class="absolute -top-12 -right-12 w-48 h-48 bg-brand-500/20 rounded-full blur-3xl"></div>
+
+            <div class="relative z-10 space-y-6">
+              <div class="flex items-center gap-4">
+                <img src="https://avatars.githubusercontent.com/u/101294247?v=4" alt="Mohamed Saad" class="w-20 h-20 rounded-2xl border-2 border-brand-500/50 shadow-md object-cover" />
+                <div>
+                  <h3 class="font-bold text-white text-lg">Mohamed Saad</h3>
+                  <p class="text-xs text-gray-400 font-mono">@zvinn &bull; Cairo, Egypt</p>
+                  <div class="mt-2 inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-[11px] text-gray-300">
+                    <i data-lucide="map-pin" class="w-3 h-3 text-brand-400"></i>
+                    <span>Available Globally (Remote)</span>
+                  </div>
+                </div>
+              </div>
+
+              <hr class="border-white/10" />
+
+              <div class="space-y-3 text-sm">
+                <div class="flex justify-between py-1">
+                  <span class="text-gray-400">Current Role</span>
+                  <span class="font-medium text-white">Co-founder & CTO @ Fixsy</span>
+                </div>
+                <div class="flex justify-between py-1">
+                  <span class="text-gray-400">Flagship Product</span>
+                  <span class="font-medium text-brand-400">Acadify (Next.js 16 LMS)</span>
+                </div>
+                <div class="flex justify-between py-1">
+                  <span class="text-gray-400">Core Expertise</span>
+                  <span class="font-medium text-white">Full-Stack, Mobile, AI</span>
+                </div>
+                <div class="flex justify-between py-1">
+                  <span class="text-gray-400">Primary Contact</span>
+                  <a href="mailto:mhamed.saad.ibrahim@gmail.com" class="font-medium text-gray-200 hover:text-brand-400 truncate max-w-[180px]">
+                    mhamed.saad.ibrahim@gmail.com
+                  </a>
+                </div>
+              </div>
+
+              <div class="pt-2">
+                <a href="#contact" class="w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-white/10 hover:bg-white/15 text-white text-xs font-semibold tracking-wide uppercase transition-all">
+                  <i data-lucide="send" class="w-3.5 h-3.5"></i>
+                  <span>Initiate Consultation</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CASE STUDIES SECTION -->
+    <section id="case-studies" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-white/5">
+      <div class="space-y-4 mb-12">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-400 text-xs font-semibold">
+          PROVEN TRACK RECORD
+        </div>
+        <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white">
+          Architectural Case Studies
+        </h2>
+        <p class="text-gray-400 max-w-2xl text-base sm:text-lg">
+          Deep dives into production platforms engineered from ground zero, highlighting architectural choices, performance benchmarks, and measurable impact.
+        </p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="flex items-center gap-2 overflow-x-auto pb-4 no-scrollbar mb-8">
+        <button onclick="filterProjects('all')" class="project-filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-brand-500 text-white transition-all" data-category="all">
+          All Case Studies (4)
+        </button>
+        <button onclick="filterProjects('saas')" class="project-filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white/5 hover:bg-white/10 text-gray-300 border border-white/10 transition-all" data-category="saas">
+          SaaS & EdTech (Acadify)
+        </button>
+        <button onclick="filterProjects('mobile')" class="project-filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white/5 hover:bg-white/10 text-gray-300 border border-white/10 transition-all" data-category="mobile">
+          Mobile & Logistics (Fixsy)
+        </button>
+        <button onclick="filterProjects('ai')" class="project-filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white/5 hover:bg-white/10 text-gray-300 border border-white/10 transition-all" data-category="ai">
+          AI & Consumer (Meryt)
+        </button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+        <!-- CASE STUDY 1: ACADIFY -->
+        <article class="project-card glass-panel rounded-2xl border border-white/10 overflow-hidden flex flex-col justify-between" data-category="saas">
+          <div class="p-6 sm:p-8 space-y-6">
+            
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <span class="inline-block px-2.5 py-1 rounded-md text-[11px] font-mono font-semibold bg-brand-500/10 text-brand-400 border border-brand-500/20 mb-3">
+                  COMMERCIAL SAAS & EDTECH PLATFORM
+                </span>
+                <h3 class="text-2xl font-bold text-white tracking-tight">Acadify LMS & Academy System</h3>
+              </div>
+              <span class="px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-semibold border border-emerald-500/30 shrink-0">
+                Production Ready
+              </span>
+            </div>
+
+            <p class="text-sm text-gray-300 leading-relaxed">
+              Engineered a high-performance, multi-role Learning Management System built on Next.js 16 App Router and React 19. Supports complex multi-tenant academy workflows, comprehensive role-based access control (Admin, Instructor, Student), dual Arabic/English RTL support, and automated course revenue distribution.
+            </p>
+
+            <div class="space-y-3 bg-dark-900/60 p-4 rounded-xl border border-white/5">
+              <h4 class="text-xs font-bold text-gray-400 uppercase tracking-wider">Key Architectural Decisions:</h4>
+              <ul class="text-xs text-gray-300 space-y-2">
+                <li class="flex items-center gap-2">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-brand-400 shrink-0"></i>
+                  <span><strong>Next.js 16 & React 19 Server Actions:</strong> Zero-waterfall data fetching with instantaneous transitions.</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-brand-400 shrink-0"></i>
+                  <span><strong>Financial Ledger & Wallet:</strong> Automated commission splitting, pending payouts, and multi-currency orders.</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-brand-400 shrink-0"></i>
+                  <span><strong>Native RTL & Globalization:</strong> Flawless bi-directional UI for global academy markets.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="flex flex-wrap gap-2 pt-2">
+              <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-white/5 text-gray-300 border border-white/10">Next.js 16</span>
+              <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-white/5 text-gray-300 border border-white/10">React 19</span>
+              <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-white/5 text-gray-300 border border-white/10">TypeScript</span>
+              <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-white/5 text-gray-300 border border-white/10">Tailwind CSS v4</span>
+              <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-white/5 text-gray-300 border border-white/10">PostgreSQL</span>
+              <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-white/5 text-gray-300 border border-white/10">Lucide</span>
+            </div>
+
+          </div>
+
+          <div class="px-6 sm:px-8 py-4 bg-white/[0.02] border-t border-white/5 flex items-center justify-between no-print">
+            <a href="https://github.com/zvinn/acadify" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-semibold text-brand-400 hover:text-brand-300 transition-colors">
+              <i data-lucide="github" class="w-4 h-4"></i>
+              <span>Inspect Repository</span>
+            </a>
+            <a href="mailto:mhamed.saad.ibrahim@gmail.com?subject=Acadify%20Commercial%20License%20Inquiry" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-brand-500/20 hover:bg-brand-500/30 text-brand-300 text-xs font-semibold border border-brand-500/30 transition-all">
+              <i data-lucide="shopping-bag" class="w-3.5 h-3.5"></i>
+              <span>Acquire License</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- CASE STUDY 2: FIXSY -->
+        <article class="project-card glass-panel rounded-2xl border border-white/10 overflow-hidden flex flex-col justify-between" data-category="mobile">
+          <div class="p-6 sm:p-8 space-y-6">
+            
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <span class="inline-block px-2.5 py-1 rounded-md text-[11px] font-mono font-semibold bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 mb-3">
+                  ON-DEMAND MOBILE SERVICES & LOGISTICS
+                </span>
+                <h3 class="text-2xl font-bold text-white tracking-tight">Fixsy Mobile Ecosystem</h3>
+              </div>
+              <span class="px-2.5 py-1 rounded-full bg-indigo-500/20 text-indigo-300 text-xs font-semibold border border-indigo-500/30 shrink-0">
+                Co-Founder & CTO
+              </span>
+            </div>
+
+            <p class="text-sm text-gray-300 leading-relaxed">
+              Architected the end-to-end technical ecosystem for a high-concurrency home services marketplace connecting customers with verified trade technicians. Engineered cross-platform iOS & Android mobile apps utilizing Flutter and strict Clean Architecture, backed by a microservices-driven NestJS cluster.
+            </p>
+
+            <div class="space-y-3 bg-dark-900/60 p-4 rounded-xl border border-white/5">
+              <h4 class="text-xs font-bold text-gray-400 uppercase tracking-wider">Key Architectural Decisions:</h4>
+              <ul class="text-xs text-gray-300 space-y-2">
+                <li class="flex items-center gap-2">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-indigo-400 shrink-0"></i>
+                  <span><strong>Layered Clean Architecture:</strong> Clear separation between Domain, Data, and Presentation layers for testability.</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-indigo-400 shrink-0"></i>
+                  <span><strong>State Management via Riverpod:</strong> Deterministic asynchronous state flows with zero memory leaks.</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-indigo-400 shrink-0"></i>
+                  <span><strong>Real-Time Geolocation:</strong> WebSocket-powered technician dispatch, live tracking, and status transitions.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="flex flex-wrap gap-2 pt-2">
+              <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-white/5 text-gray-300 border border-white/10">Flutter</span>
+              <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-white/5 text-gray-300 border border-white/10">Dart</span>
+              <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-white/5 text-gray-300 border border-white/10">Riverpod</span>
+              <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-white/5 text-gray-300 border border-white/10">Clean Architecture</span>
+              <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-white/5 text-gray-300 border border-white/10">NestJS</span>
+              <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-white/5 text-gray-300 border border-white/10">WebSockets</span>
+            </div>
+
+          </div>
+
+          <div class="px-6 sm:px-8 py-4 bg-white/[0.02] border-t border-white/5 flex items-center justify-between no-print">
+            <a href="https://github.com/zvinn/fixsy-flutter" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-semibold text-indigo-400 hover:text-indigo-300 transition-colors">
+              <i data-lucide="github" class="w-4 h-4"></i>
+              <span>View Flutter Codebase</span>
+            </a>
+            <span class="text-xs text-gray-400 font-mono">Mobile & Backend Ops</span>
+          </div>
+        </article>
+
+        <!-- CASE STUDY 3: MERYT -->
+        <article class="project-card glass-panel rounded-2xl border border-white/10 overflow-hidden flex flex-col justify-between" data-category="ai">
+          <div class="p-6 sm:p-8 space-y-6">
+            
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <span class="inline-block px-2.5 py-1 rounded-md text-[11px] font-mono font-semibold bg-pink-500/10 text-pink-400 border border-pink-500/20 mb-3">
+                  AI COMPANIONSHIP & REAL-TIME PWA
+                </span>
+                <h3 class="text-2xl font-bold text-white tracking-tight">Meryt Couple Experience</h3>
+              </div>
+              <span class="px-2.5 py-1 rounded-full bg-pink-500/20 text-pink-300 text-xs font-semibold border border-pink-500/30 shrink-0">
+                PWA + GenAI
+              </span>
+            </div>
+
+            <p class="text-sm text-gray-300 leading-relaxed">
+              Designed a private, end-to-end encrypted relationship portal and memory capsule. Features generative conversational AI companion, automated anniversary reminders via WebPush, rich media vault with cloud sync, and offline-first PWA caching.
+            </p>
+
+            <div class="space-y-3 bg-dark-900/60 p-4 rounded-xl border border-white/5">
+              <h4 class="text-xs font-bold text-gray-400 uppercase tracking-wider">Key Architectural Decisions:</h4>
+              <ul class="text-xs text-gray-300 space-y-2">
+                <li class="flex items-center gap-2">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-pink-400 shrink-0"></i>
+                  <span><strong>Streaming GenAI Pipelines:</strong> Direct low-latency contextual dialogue generation using Gemini models.</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-pink-400 shrink-0"></i>
+                  <span><strong>Web Push & VAPID Integration:</strong> Cross-platform push notifications delivering real-time alerts on iOS and Android.</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-pink-400 shrink-0"></i>
+                  <span><strong>Zero-Friction Mobile PWA:</strong> Native feel, custom gestures, and full offline caching layer.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="flex flex-wrap gap-2 pt-2">
+              <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-white/5 text-gray-300 border border-white/10">Next.js 15</span>
+              <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-white/5 text-gray-300 border border-white/10">TypeScript</span>
+              <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-white/5 text-gray-300 border border-white/10">Gemini AI</span>
+              <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-white/5 text-gray-300 border border-white/10">WebPush</span>
+              <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-white/5 text-gray-300 border border-white/10">Tailwind CSS</span>
+            </div>
+
+          </div>
+
+          <div class="px-6 sm:px-8 py-4 bg-white/[0.02] border-t border-white/5 flex items-center justify-between no-print">
+            <span class="text-xs text-gray-400 font-mono">Private Architecture Case</span>
+            <span class="text-xs text-pink-400 font-medium">Interactive AI Companion</span>
+          </div>
+        </article>
+
+        <!-- CASE STUDY 4: A-PLUS ENTERPRISE -->
+        <article class="project-card glass-panel rounded-2xl border border-white/10 overflow-hidden flex flex-col justify-between" data-category="saas">
+          <div class="p-6 sm:p-8 space-y-6">
+            
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <span class="inline-block px-2.5 py-1 rounded-md text-[11px] font-mono font-semibold bg-amber-500/10 text-amber-400 border border-amber-500/20 mb-3">
+                  ENTERPRISE INVENTORY & COMMERCE
+                </span>
+                <h3 class="text-2xl font-bold text-white tracking-tight">A-Plus Hardware & Retail Engine</h3>
+              </div>
+              <span class="px-2.5 py-1 rounded-full bg-amber-500/20 text-amber-300 text-xs font-semibold border border-amber-500/30 shrink-0">
+                Enterprise
+              </span>
+            </div>
+
+            <p class="text-sm text-gray-300 leading-relaxed">
+              Designed a robust stock tracking, customer quotation, and serial number verification engine for a high-volume laptop and hardware enterprise. Features real-time catalog indexing, warranty validation, and operational metrics dashboards.
+            </p>
+
+            <div class="space-y-3 bg-dark-900/60 p-4 rounded-xl border border-white/5">
+              <h4 class="text-xs font-bold text-gray-400 uppercase tracking-wider">Key Architectural Decisions:</h4>
+              <ul class="text-xs text-gray-300 space-y-2">
+                <li class="flex items-center gap-2">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400 shrink-0"></i>
+                  <span><strong>Sub-second Full-Text Search:</strong> Instantaneous product lookup across thousands of hardware SKUs.</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400 shrink-0"></i>
+                  <span><strong>Audit Trails & Stock Integrity:</strong> Transactional database logs preventing inventory shrinkage.</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400 shrink-0"></i>
+                  <span><strong>Responsive POS Dashboard:</strong> Streamlined counter operations on tablets and desktops.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="flex flex-wrap gap-2 pt-2">
+              <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-white/5 text-gray-300 border border-white/10">React</span>
+              <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-white/5 text-gray-300 border border-white/10">Node.js</span>
+              <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-white/5 text-gray-300 border border-white/10">Express</span>
+              <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-white/5 text-gray-300 border border-white/10">Tailwind CSS</span>
+            </div>
+
+          </div>
+
+          <div class="px-6 sm:px-8 py-4 bg-white/[0.02] border-t border-white/5 flex items-center justify-between no-print">
+            <a href="https://github.com/zvinn/a-plus-laptops" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-semibold text-amber-400 hover:text-amber-300 transition-colors">
+              <i data-lucide="github" class="w-4 h-4"></i>
+              <span>View Repository</span>
+            </a>
+            <span class="text-xs text-gray-400 font-mono">Retail Systems</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- EXPERIENCE & LEADERSHIP TIMELINE -->
+    <section id="experience" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-white/5">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <div class="lg:col-span-4 space-y-4">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-400 text-xs font-semibold">
+            LEADERSHIP & ROLES
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">
+            Professional Experience
+          </h2>
+          <p class="text-sm text-gray-400 leading-relaxed">
+            Leading engineering squads, establishing architecture governance, and shipping commercial software with high reliability and zero downtime.
+          </p>
+
+          <div class="pt-6 hidden lg:block no-print">
+            <div class="glass-card p-5 rounded-xl border border-white/5">
+              <div class="flex items-center gap-3">
+                <i data-lucide="shield-check" class="w-6 h-6 text-brand-400"></i>
+                <div>
+                  <h4 class="text-sm font-bold text-white">Engineering Philosophy</h4>
+                  <p class="text-xs text-gray-400 mt-1">Clean Architecture, continuous automated delivery, pragmatic scalability, and developer ergonomics.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-8 space-y-8 relative before:absolute before:inset-0 before:left-3 sm:before:left-4 before:w-0.5 before:bg-white/10">
+
+          <!-- Position 1 -->
+          <div class="relative pl-8 sm:pl-10 group">
+            <div class="absolute left-1.5 sm:left-2.5 top-1.5 w-3.5 h-3.5 rounded-full bg-brand-400 border-4 border-dark-950 shadow-sm shadow-brand-400"></div>
+            <div class="glass-card p-6 rounded-xl border border-white/5 space-y-3">
+              <div class="flex flex-wrap items-center justify-between gap-2">
+                <h3 class="text-lg font-bold text-white">Co-founder & Chief Technology Officer (CTO)</h3>
+                <span class="text-xs font-mono font-medium px-2.5 py-1 rounded-full bg-brand-500/10 text-brand-400 border border-brand-500/20">2023 — Present</span>
+              </div>
+              <p class="text-xs font-semibold text-brand-400 uppercase tracking-wide">Fixsy &bull; Cairo, Egypt</p>
+              <p class="text-sm text-gray-300 leading-relaxed">
+                Spearheaded the technical direction, architecture, and deployment of the Fixsy on-demand home maintenance ecosystem. Directed cross-functional teams building the customer Flutter mobile app, provider tracking portal, and high-concurrency NestJS microservices.
+              </p>
+              <ul class="text-xs text-gray-400 space-y-1.5 pt-1">
+                <li class="flex items-start gap-2">
+                  <span class="text-brand-400 font-bold">&bull;</span>
+                  <span>Reduced customer booking latency by 45% through WebSocket optimization and real-time state orchestration.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-brand-400 font-bold">&bull;</span>
+                  <span>Enforced Domain-Driven Clean Architecture across the Flutter codebase, enabling frictionless modular upgrades.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Position 2 -->
+          <div class="relative pl-8 sm:pl-10 group">
+            <div class="absolute left-1.5 sm:left-2.5 top-1.5 w-3.5 h-3.5 rounded-full bg-gray-600 border-4 border-dark-950"></div>
+            <div class="glass-card p-6 rounded-xl border border-white/5 space-y-3">
+              <div class="flex flex-wrap items-center justify-between gap-2">
+                <h3 class="text-lg font-bold text-white">Lead Full-Stack Architect & SaaS Creator</h3>
+                <span class="text-xs font-mono font-medium px-2.5 py-1 rounded-full bg-white/5 text-gray-300 border border-white/10">2022 — Present</span>
+              </div>
+              <p class="text-xs font-semibold text-gray-400 uppercase tracking-wide">Independent Practice & Digital Product Lab</p>
+              <p class="text-sm text-gray-300 leading-relaxed">
+                Architected and deployed full-scale commercial software products, including Acadify LMS and enterprise inventory portals. Partnered with regional businesses to deliver custom Next.js web applications, complex payment gateway integrations, and RTL localization.
+              </p>
+              <ul class="text-xs text-gray-400 space-y-1.5 pt-1">
+                <li class="flex items-start gap-2">
+                  <span class="text-gray-400 font-bold">&bull;</span>
+                  <span>Built the multi-role financial ledger engine for Acadify handling dual payout flows and multi-currency orders.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-gray-400 font-bold">&bull;</span>
+                  <span>Consulted on performance tuning, database indexing (PostgreSQL), and modern CSS design system implementations.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Position 3 -->
+          <div class="relative pl-8 sm:pl-10 group">
+            <div class="absolute left-1.5 sm:left-2.5 top-1.5 w-3.5 h-3.5 rounded-full bg-gray-600 border-4 border-dark-950"></div>
+            <div class="glass-card p-6 rounded-xl border border-white/5 space-y-3">
+              <div class="flex flex-wrap items-center justify-between gap-2">
+                <h3 class="text-lg font-bold text-white">Full-Stack Engineer & Mobile Developer</h3>
+                <span class="text-xs font-mono font-medium px-2.5 py-1 rounded-full bg-white/5 text-gray-300 border border-white/10">2021 — 2022</span>
+              </div>
+              <p class="text-xs font-semibold text-gray-400 uppercase tracking-wide">Early Career & Client Engineering</p>
+              <p class="text-sm text-gray-300 leading-relaxed">
+                Developed responsive web applications with React, Node.js, and Dart/Flutter. Implemented secure authentication pipelines, RESTful APIs, and database migrations.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SKILLS & TECHNICAL MATRIX -->
+    <section id="skills" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-white/5">
+      <div class="space-y-4 mb-12">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-400 text-xs font-semibold">
+          TECHNICAL STACK & MASTERY
+        </div>
+        <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white">
+          Architectural Competencies
+        </h2>
+        <p class="text-gray-400 max-w-2xl text-base sm:text-lg">
+          A breakdown of languages, frameworks, and infrastructure tools utilized daily in high-stakes production environments.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <!-- Stack 1: Frontend & Architecture -->
+        <div class="glass-panel p-6 rounded-2xl border border-white/5 space-y-4">
+          <div class="w-10 h-10 rounded-xl bg-brand-500/10 text-brand-400 flex items-center justify-center border border-brand-500/20">
+            <i data-lucide="layout" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white">Web & Frontend Architecture</h3>
+          <p class="text-xs text-gray-400">High-performance reactive interfaces, modular state management, and SSR/SSG.</p>
+          <div class="space-y-2 pt-2 text-xs font-mono">
+            <div class="flex justify-between py-1 border-b border-white/5">
+              <span class="text-gray-300">Next.js 15/16 (App Router)</span>
+              <span class="text-brand-400">Expert</span>
+            </div>
+            <div class="flex justify-between py-1 border-b border-white/5">
+              <span class="text-gray-300">React 19 & Server Actions</span>
+              <span class="text-brand-400">Expert</span>
+            </div>
+            <div class="flex justify-between py-1 border-b border-white/5">
+              <span class="text-gray-300">TypeScript / ESNext</span>
+              <span class="text-brand-400">Advanced</span>
+            </div>
+            <div class="flex justify-between py-1 border-b border-white/5">
+              <span class="text-gray-300">Tailwind CSS (v3/v4)</span>
+              <span class="text-brand-400">Expert</span>
+            </div>
+            <div class="flex justify-between py-1">
+              <span class="text-gray-300">RTL & Design Systems</span>
+              <span class="text-brand-400">Master</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stack 2: Mobile Systems -->
+        <div class="glass-panel p-6 rounded-2xl border border-white/5 space-y-4">
+          <div class="w-10 h-10 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center border border-indigo-500/20">
+            <i data-lucide="smartphone" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white">Cross-Platform Mobile</h3>
+          <p class="text-xs text-gray-400">Production-grade native experiences across iOS and Android with strict separation of concerns.</p>
+          <div class="space-y-2 pt-2 text-xs font-mono">
+            <div class="flex justify-between py-1 border-b border-white/5">
+              <span class="text-gray-300">Flutter 3.x</span>
+              <span class="text-indigo-400">Advanced</span>
+            </div>
+            <div class="flex justify-between py-1 border-b border-white/5">
+              <span class="text-gray-300">Dart</span>
+              <span class="text-indigo-400">Advanced</span>
+            </div>
+            <div class="flex justify-between py-1 border-b border-white/5">
+              <span class="text-gray-300">Riverpod & Bloc</span>
+              <span class="text-indigo-400">Advanced</span>
+            </div>
+            <div class="flex justify-between py-1 border-b border-white/5">
+              <span class="text-gray-300">Clean Architecture</span>
+              <span class="text-indigo-400">Master</span>
+            </div>
+            <div class="flex justify-between py-1">
+              <span class="text-gray-300">Push Notifications & Maps</span>
+              <span class="text-indigo-400">Advanced</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stack 3: Backend & Databases -->
+        <div class="glass-panel p-6 rounded-2xl border border-white/5 space-y-4">
+          <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center border border-emerald-500/20">
+            <i data-lucide="server" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white">Backend & Cloud Data</h3>
+          <p class="text-xs text-gray-400">Scalable REST/WebSocket APIs, relational schemas, and real-time synchronization.</p>
+          <div class="space-y-2 pt-2 text-xs font-mono">
+            <div class="flex justify-between py-1 border-b border-white/5">
+              <span class="text-gray-300">Node.js / Express</span>
+              <span class="text-emerald-400">Expert</span>
+            </div>
+            <div class="flex justify-between py-1 border-b border-white/5">
+              <span class="text-gray-300">NestJS (Microservices)</span>
+              <span class="text-emerald-400">Advanced</span>
+            </div>
+            <div class="flex justify-between py-1 border-b border-white/5">
+              <span class="text-gray-300">PostgreSQL / Prisma</span>
+              <span class="text-emerald-400">Advanced</span>
+            </div>
+            <div class="flex justify-between py-1 border-b border-white/5">
+              <span class="text-gray-300">Supabase & Firebase</span>
+              <span class="text-emerald-400">Advanced</span>
+            </div>
+            <div class="flex justify-between py-1">
+              <span class="text-gray-300">WebSockets & Queues</span>
+              <span class="text-emerald-400">Advanced</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stack 4: AI & DevOps -->
+        <div class="glass-panel p-6 rounded-2xl border border-white/5 space-y-4">
+          <div class="w-10 h-10 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center border border-purple-500/20">
+            <i data-lucide="cpu" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white">AI Systems & DevOps</h3>
+          <p class="text-xs text-gray-400">Generative AI integration, automated CI/CD deployment pipelines, and cloud hosting.</p>
+          <div class="space-y-2 pt-2 text-xs font-mono">
+            <div class="flex justify-between py-1 border-b border-white/5">
+              <span class="text-gray-300">Gemini / OpenAI APIs</span>
+              <span class="text-purple-400">Advanced</span>
+            </div>
+            <div class="flex justify-between py-1 border-b border-white/5">
+              <span class="text-gray-300">Docker & Containers</span>
+              <span class="text-purple-400">Proficient</span>
+            </div>
+            <div class="flex justify-between py-1 border-b border-white/5">
+              <span class="text-gray-300">GitHub Actions (CI/CD)</span>
+              <span class="text-purple-400">Advanced</span>
+            </div>
+            <div class="flex justify-between py-1 border-b border-white/5">
+              <span class="text-gray-300">Vercel & Cloud Deploy</span>
+              <span class="text-purple-400">Expert</span>
+            </div>
+            <div class="flex justify-between py-1">
+              <span class="text-gray-300">Security & OWASP</span>
+              <span class="text-purple-400">Advanced</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT & HIRE SECTION -->
+    <section id="contact" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-white/5">
+      <div class="glass-panel rounded-3xl p-8 sm:p-12 border border-white/10 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-brand-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 relative z-10 items-center">
+          
+          <div class="lg:col-span-6 space-y-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-400 text-xs font-semibold">
+              START A CONVERSATION
+            </div>
+
+            <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white leading-tight">
+              Ready to build something <br class="hidden sm:inline"/>
+              <span class="gradient-text">exceptional together?</span>
+            </h2>
+
+            <p class="text-sm sm:text-base text-gray-300 leading-relaxed">
+              Whether you are seeking an executive technical leader (CTO / Lead Architect), looking to acquire a commercial license for <strong class="text-white">Acadify</strong>, or have an ambitious full-stack or AI project to engineer — I would love to connect.
+            </p>
+
+            <div class="space-y-3 pt-2">
+              <div class="flex items-center justify-between p-3.5 rounded-xl bg-dark-900 border border-white/10 max-w-md">
+                <div class="flex items-center gap-3">
+                  <i data-lucide="mail" class="w-4 h-4 text-brand-400"></i>
+                  <span id="email-text" class="text-xs sm:text-sm font-mono text-white">mhamed.saad.ibrahim@gmail.com</span>
+                </div>
+                <button onclick="copyEmail()" class="text-xs font-semibold text-brand-400 hover:text-brand-300 px-2.5 py-1 rounded bg-white/5 hover:bg-white/10 transition-all flex items-center gap-1">
+                  <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+                  <span id="copy-btn-label">Copy</span>
+                </button>
+              </div>
+
+              <div class="flex flex-wrap items-center gap-4 text-xs text-gray-400 pt-2">
+                <div class="flex items-center gap-1.5">
+                  <i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-400"></i>
+                  <span>Cairo, Egypt &bull; Global Remote</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                  <i data-lucide="github" class="w-3.5 h-3.5 text-brand-400"></i>
+                  <a href="https://github.com/zvinn" target="_blank" class="hover:text-white underline">github.com/zvinn</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="lg:col-span-6 glass-card p-6 sm:p-8 rounded-2xl border border-white/10">
+            <form onsubmit="handleContactSubmit(event)" class="space-y-4">
+              <div>
+                <label for="contact-name" class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-1.5">Your Name or Organization</label>
+                <input type="text" id="contact-name" required placeholder="e.g. Alex Morgan / Stealth SaaS" class="w-full px-4 py-3 rounded-xl bg-dark-900 border border-white/10 text-white placeholder-gray-500 text-sm focus:outline-none focus:border-brand-500 transition-colors" />
+              </div>
+
+              <div>
+                <label for="contact-topic" class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-1.5">Consultation Topic</label>
+                <select id="contact-topic" class="w-full px-4 py-3 rounded-xl bg-dark-900 border border-white/10 text-white text-sm focus:outline-none focus:border-brand-500 transition-colors">
+                  <option value="CTO / Fractional Architect Role">CTO / Fractional Architect Role</option>
+                  <option value="Acadify LMS License & Deployment">Acadify LMS License & Deployment</option>
+                  <option value="Full-Stack Web or Mobile Development">Full-Stack Web or Mobile Development</option>
+                  <option value="AI Integration & System Architecture">AI Integration & System Architecture</option>
+                  <option value="General Technical Advisory">General Technical Advisory</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="contact-message" class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-1.5">Project Scope / Brief</label>
+                <textarea id="contact-message" rows="3" required placeholder="Share brief context regarding your timeline, requirements, or inquiry..." class="w-full px-4 py-3 rounded-xl bg-dark-900 border border-white/10 text-white placeholder-gray-500 text-sm focus:outline-none focus:border-brand-500 transition-colors"></textarea>
+              </div>
+
+              <button type="submit" class="w-full py-3.5 px-6 rounded-xl bg-brand-500 hover:bg-brand-600 text-white font-semibold text-sm shadow-xl shadow-brand-500/25 transition-all flex items-center justify-center gap-2">
+                <i data-lucide="send" class="w-4 h-4"></i>
+                <span>Send Direct Inquiry</span>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="border-t border-white/5 py-12 bg-dark-950 text-gray-400 text-xs font-mono">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        &copy; <span id="current-year">2026</span> Mohamed Saad (zvinn). All rights reserved.
+      </div>
+      <div class="flex items-center gap-6 no-print">
+        <a href="https://github.com/zvinn" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">GitHub</a>
+        <a href="mailto:mhamed.saad.ibrahim@gmail.com" class="hover:text-white transition-colors">Email</a>
+        <a href="#overview" class="hover:text-brand-400 transition-colors">Back to Top &uarr;</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    function copyEmail() {
+      const email = document.getElementById('email-text').textContent;
+      navigator.clipboard.writeText(email).then(() => {
+        const btnLabel = document.getElementById('copy-btn-label');
+        btnLabel.textContent = 'Copied!';
+        setTimeout(() => {
+          btnLabel.textContent = 'Copy';
+        }, 2500);
+      });
+    }
+
+    function filterProjects(category) {
+      const buttons = document.querySelectorAll('.project-filter-btn');
+      buttons.forEach(btn => {
+        if (btn.dataset.category === category) {
+          btn.className = 'project-filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-brand-500 text-white transition-all';
+        } else {
+          btn.className = 'project-filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white/5 hover:bg-white/10 text-gray-300 border border-white/10 transition-all';
+        }
+      });
+
+      const cards = document.querySelectorAll('.project-card');
+      cards.forEach(card => {
+        if (category === 'all' || card.dataset.category === category) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    function handleContactSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('contact-name').value;
+      const topic = document.getElementById('contact-topic').value;
+      const message = document.getElementById('contact-message').value;
+
+      const subject = encodeURIComponent(`[Inquiry] ${topic} - from ${name}`);
+      const body = encodeURIComponent(`Hello Mohamed,\n\nName / Organization: ${name}\nTopic: ${topic}\n\nProject Brief:\n${message}\n\nBest regards,\n${name}`);
+
+      window.location.href = `mailto:mhamed.saad.ibrahim@gmail.com?subject=${subject}&body=${body}`;
+    }
+  </script>
+</body>
+</html>
