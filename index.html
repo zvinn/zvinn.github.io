@@ -134,10 +134,10 @@
       </nav>
 
       <div class="flex items-center gap-3 no-print">
-        <button onclick="window.print()" class="hidden sm:inline-flex items-center gap-2 px-3.5 py-2 text-xs font-semibold rounded-lg bg-white/5 hover:bg-white/10 text-gray-200 border border-white/10 transition-all">
-          <i data-lucide="printer" class="w-4 h-4"></i>
-          <span>Save CV / Print</span>
-        </button>
+        <a href="assets/Mohamed_Saad_CV.pdf" download="Mohamed_Saad_CV.pdf" target="_blank" class="hidden sm:inline-flex items-center gap-2 px-3.5 py-2 text-xs font-semibold rounded-lg bg-white/5 hover:bg-white/10 text-gray-200 border border-white/10 transition-all hover:border-brand-500/50">
+          <i data-lucide="download" class="w-4 h-4 text-brand-400"></i>
+          <span>Download CV (PDF)</span>
+        </a>
         <a href="#contact" class="inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold rounded-lg bg-brand-500 hover:bg-brand-600 text-white shadow-md shadow-brand-500/25 transition-all">
           <i data-lucide="mail" class="w-4 h-4"></i>
           <span>Hire / Connect</span>
@@ -253,6 +253,27 @@
           </div>
         </div>
 
+      </div>
+
+      <!-- Honors & Certifications Banner -->
+      <div class="mt-12 glass-panel p-6 sm:p-8 rounded-2xl border border-white/10">
+        <h3 class="text-xs font-bold text-brand-400 uppercase tracking-wider mb-4 flex items-center gap-2">
+          <i data-lucide="award" class="w-4 h-4"></i> Elite Programs, Honors &amp; Academic Foundation
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-xs">
+          <div class="p-3.5 rounded-xl bg-dark-900 border border-white/5">
+            <div class="font-bold text-white mb-1">Google "Build with AI" Program</div>
+            <p class="text-gray-400 text-[11px]">Selected among 5,000 elite developers in Egypt to integrate advanced AI into production-grade systems.</p>
+          </div>
+          <div class="p-3.5 rounded-xl bg-dark-900 border border-white/5">
+            <div class="font-bold text-white mb-1">McKinsey &amp; Company Forward</div>
+            <p class="text-gray-400 text-[11px]">Advanced strategic thinking, digital leadership, and high-impact agile execution program.</p>
+          </div>
+          <div class="p-3.5 rounded-xl bg-dark-900 border border-white/5">
+            <div class="font-bold text-white mb-1">B.S. in Business Information Systems (BIS)</div>
+            <p class="text-gray-400 text-[11px]">Graduated (2026). Rigorous academic focus on software architecture, data modeling, and business tech.</p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -562,6 +583,21 @@
         </div>
 
         <div class="lg:col-span-8 space-y-8 relative before:absolute before:inset-0 before:left-3 sm:before:left-4 before:w-0.5 before:bg-white/10">
+
+          <!-- Outlier AI Position -->
+          <div class="relative pl-8 sm:pl-10 group">
+            <div class="absolute left-1.5 sm:left-2.5 top-1.5 w-3.5 h-3.5 rounded-full bg-purple-400 border-4 border-dark-950 shadow-sm shadow-purple-400"></div>
+            <div class="glass-card p-6 rounded-xl border border-white/5 space-y-3">
+              <div class="flex flex-wrap items-center justify-between gap-2">
+                <h3 class="text-lg font-bold text-white">AI Trainer & Software Engineering Specialist</h3>
+                <span class="text-xs font-mono font-medium px-2.5 py-1 rounded-full bg-purple-500/10 text-purple-300 border border-purple-500/20">Remote</span>
+              </div>
+              <p class="text-xs font-semibold text-purple-400 uppercase tracking-wide">Outlier AI &bull; LLM Fine-Tuning &amp; RLHF</p>
+              <p class="text-sm text-gray-300 leading-relaxed">
+                Evaluated and refined frontier AI-generated code snippets ensuring logical flow, optimal algorithmic complexity, and strict security compliance. Conducted Reinforcement Learning from Human Feedback (RLHF) and advanced prompt engineering to enhance reasoning and coding benchmarks in next-gen foundation models.
+              </p>
+            </div>
+          </div>
 
           <!-- Position 1 -->
           <div class="relative pl-8 sm:pl-10 group">

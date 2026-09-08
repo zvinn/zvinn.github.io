@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mohamed Saad Behairy - Executive CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    @page {
+      size: A4;
+      margin: 14mm 14mm 14mm 14mm;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: #1a202c;
+      background: #ffffff;
+      line-height: 1.45;
+      font-size: 10pt;
+    }
+    a {
+      color: #047857;
+      text-decoration: none;
+    }
+    .header {
+      border-bottom: 2px solid #059669;
+      padding-bottom: 12px;
+      margin-bottom: 14px;
+    }
+    .name-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    .name {
+      font-size: 20pt;
+      font-weight: 800;
+      color: #0f172a;
+      letter-spacing: -0.5px;
+    }
+    .title-sub {
+      font-size: 10.5pt;
+      font-weight: 600;
+      color: #059669;
+      margin-top: 3px;
+    }
+    .contact-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 8.5pt;
+      color: #475569;
+      margin-top: 6px;
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .section {
+      margin-bottom: 13px;
+    }
+    .section-title {
+      font-size: 10.5pt;
+      font-weight: 800;
+      color: #0f172a;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 3px;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .section-title::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 13px;
+      background: #059669;
+      border-radius: 2px;
+    }
+    .summary-p {
+      font-size: 9pt;
+      color: #334155;
+      line-height: 1.5;
+      text-align: justify;
+    }
+    .job {
+      margin-bottom: 10px;
+    }
+    .job:last-child {
+      margin-bottom: 0;
+    }
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2px;
+    }
+    .job-title {
+      font-size: 9.5pt;
+      font-weight: 700;
+      color: #0f172a;
+    }
+    .job-company {
+      font-weight: 600;
+      color: #059669;
+    }
+    .job-meta {
+      font-size: 8pt;
+      color: #64748b;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 500;
+    }
+    ul.bullets {
+      list-style-type: disc;
+      padding-left: 16px;
+      font-size: 8.8pt;
+      color: #334155;
+      margin-top: 3px;
+    }
+    ul.bullets li {
+      margin-bottom: 2px;
+      line-height: 1.4;
+    }
+    ul.bullets li strong {
+      color: #0f172a;
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .pill-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-top: 4px;
+    }
+    .pill {
+      font-size: 7.5pt;
+      font-family: 'JetBrains Mono', monospace;
+      background: #f1f5f9;
+      color: #334155;
+      padding: 2px 6px;
+      border-radius: 4px;
+      border: 1px solid #e2e8f0;
+    }
+    .edu-item {
+      margin-bottom: 6px;
+    }
+    .badge-honors {
+      display: inline-block;
+      background: #ecfdf5;
+      color: #047857;
+      border: 1px solid #a7f3d0;
+      padding: 1px 6px;
+      border-radius: 4px;
+      font-size: 8pt;
+      font-weight: 600;
+      margin-top: 2px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="name-row">
+      <div>
+        <h1 class="name">MOHAMED SAAD BEHAIRY</h1>
+        <div class="title-sub">Technical Lead &amp; Software Architect | Co-founder &amp; CTO @ Fixsy | AI Systems Specialist</div>
+      </div>
+    </div>
+    <div class="contact-bar">
+      <div class="contact-item">📍 Alexandria, Egypt</div>
+      <div class="contact-item">✉️ <a href="mailto:mhamed.saad.ibrahim@gmail.com">mhamed.saad.ibrahim@gmail.com</a></div>
+      <div class="contact-item">🌐 <a href="https://zvinn.github.io">zvinn.github.io</a></div>
+      <div class="contact-item">🐙 <a href="https://github.com/zvinn">github.com/zvinn</a></div>
+    </div>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="section">
+    <div class="section-title">Professional Summary</div>
+    <p class="summary-p">
+      Results-driven <strong>Technical Lead &amp; Software Architect</strong> with a degree in <strong>Business Information Systems (BIS)</strong> and a proven track record in software architecture, technical operations, and AI model training (RLHF). Co-founder &amp; CTO at <strong>Fixsy</strong> and creator of <strong>Acadify LMS</strong>. Selected among 5,000 elite developers in Egypt for Google's <em>Build with AI</em> program. Expert in architecting high-performance web applications (Next.js 16 / React 19), cross-platform mobile solutions (Flutter &amp; Clean Architecture), and automated AI workflows.
+    </p>
+  </div>
+
+  <!-- WORK EXPERIENCE -->
+  <div class="section">
+    <div class="section-title">Work Experience</div>
+
+    <div class="job">
+      <div class="job-header">
+        <div><span class="job-title">Co-founder &amp; Chief Technology Officer (CTO)</span> &bull; <span class="job-company">Fixsy</span></div>
+        <span class="job-meta">2023 &ndash; Present | Alexandria, Egypt</span>
+      </div>
+      <ul class="bullets">
+        <li>Architected the complete technical blueprint and software foundation for an on-demand home maintenance ecosystem.</li>
+        <li>Spearheaded cross-platform mobile app development with Flutter utilizing <strong>Clean Architecture</strong> (Domain, Data, Presentation) and Riverpod state management.</li>
+        <li>Engineered low-latency backend microservices with NestJS, WebSockets, and real-time geolocation tracking for technician dispatch.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <div><span class="job-title">AI Trainer &amp; Software Engineering Specialist</span> &bull; <span class="job-company">Outlier AI</span></div>
+        <span class="job-meta">Remote</span>
+      </div>
+      <ul class="bullets">
+        <li>Evaluated and refined AI-generated code snippets to ensure functional accuracy, logical flow, optimal performance, and security compliance.</li>
+        <li>Conducted <strong>RLHF (Reinforcement Learning from Human Feedback)</strong> and advanced Prompt Engineering to enhance LLM reasoning benchmarks.</li>
+        <li>Identified complex algorithmic edge cases and syntax vulnerabilities, delivering structured feedback for frontier model fine-tuning.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <div><span class="job-title">Technical Operations Lead &amp; CTO</span> &bull; <span class="job-company">A Plus for Laptops</span></div>
+        <span class="job-meta">Alexandria, Egypt</span>
+      </div>
+      <ul class="bullets">
+        <li>Directed technical department responsible for diagnostic testing, hardware validation, thermal optimization, and workstation QA standards.</li>
+        <li>Engineered internal inventory and quotation platform, reducing manual stock audit overhead by 40%.</li>
+        <li>Managed data-driven digital marketing campaigns and Meta Ads driving consistent revenue growth over 3+ years.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <div><span class="job-title">Creator &amp; Lead Architect</span> &bull; <span class="job-company">Acadify LMS (Commercial EdTech)</span></div>
+        <span class="job-meta">2023 &ndash; Present</span>
+      </div>
+      <ul class="bullets">
+        <li>Architected and released Acadify v1.0.0, a multi-role Learning Management System built with <strong>Next.js 16 (App Router)</strong> and <strong>React 19</strong>.</li>
+        <li>Engineered an automated multi-currency financial ledger and instructor wallet with automated commission splitting and payout pipelines.</li>
+        <li>Designed complete bi-directional internationalization with native RTL Arabic and LTR English support.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <div><span class="job-title">Branch Manager &amp; Operations Lead</span> &bull; <span class="job-company">El-Saad for Computers</span></div>
+        <span class="job-meta">Alexandria, Egypt</span>
+      </div>
+      <ul class="bullets">
+        <li>Promoted from Inventory Manager (1 year) to Branch Manager (2 years) due to exceptional operational leadership and inventory accuracy.</li>
+        <li>Supervised daily commercial and technical operations, leading and mentoring the sales team to expand local market reach.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- EDUCATION & VOLUNTEER -->
+  <div class="section">
+    <div class="section-title">Education &amp; Leadership</div>
+    <div class="job-header">
+      <div><span class="job-title">Bachelor's Degree in Business Information Systems (BIS)</span></div>
+      <span class="job-meta">Graduated (2026)</span>
+    </div>
+    <p class="summary-p" style="margin-top: 2px;">
+      Solid academic foundation in business informatics, enterprise software architecture, database management, and operational modeling.
+    </p>
+    <p class="summary-p" style="margin-top: 3px; font-size: 8.5pt; color: #64748b;">
+      <strong>Youth Volunteer &amp; Organizer:</strong> YLY &ndash; Ministry of Youth and Sports, Egypt (National youth initiatives &amp; community empowerment).
+    </p>
+  </div>
+
+  <!-- CERTIFICATIONS & HONORS -->
+  <div class="section">
+    <div class="section-title">Certifications &amp; Elite Programs</div>
+    <ul class="bullets" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4px 12px;">
+      <li><strong>Google "Build with AI" Program:</strong> Selected among 5,000 elite developers in Egypt to integrate advanced AI into production.</li>
+      <li><strong>Forward Program:</strong> McKinsey &amp; Company.</li>
+      <li><strong>Delivering Quality Work with Agility:</strong> IBM (Coursera).</li>
+      <li><strong>AICE (AI Career Essentials):</strong> ALX.</li>
+      <li><strong>Professional Foundations &amp; Virtual Assistant:</strong> ALX.</li>
+      <li><strong>Entrepreneurship &amp; Hardware Product Building:</strong> Creativa &amp; ITIDA.</li>
+    </ul>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="section">
+    <div class="section-title">Technical Competencies</div>
+    <div class="grid-2">
+      <div>
+        <div style="font-size: 8.5pt; font-weight: 700; color: #0f172a;">Software Engineering &amp; Web</div>
+        <div class="pill-group">
+          <span class="pill">Next.js 16</span>
+          <span class="pill">React 19</span>
+          <span class="pill">TypeScript</span>
+          <span class="pill">Flutter</span>
+          <span class="pill">Dart</span>
+          <span class="pill">Riverpod</span>
+          <span class="pill">Clean Architecture</span>
+          <span class="pill">Tailwind CSS</span>
+          <span class="pill">Node.js</span>
+          <span class="pill">NestJS</span>
+          <span class="pill">PostgreSQL</span>
+          <span class="pill">Prisma</span>
+        </div>
+      </div>
+      <div>
+        <div style="font-size: 8.5pt; font-weight: 700; color: #0f172a;">AI, Automation &amp; Leadership</div>
+        <div class="pill-group">
+          <span class="pill">RLHF &amp; Model Training</span>
+          <span class="pill">Prompt Engineering</span>
+          <span class="pill">Ollama / Local AI</span>
+          <span class="pill">Gemini &amp; OpenAI APIs</span>
+          <span class="pill">n8n Automation</span>
+          <span class="pill">MCP Protocol</span>
+          <span class="pill">Technical Leadership</span>
+          <span class="pill">Agile / Scrum</span>
+          <span class="pill">Hardware Diagnostics</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
