@@ -376,68 +376,109 @@
               <i data-lucide="github" class="w-4 h-4"></i>
               <span>Inspect Repository</span>
             </a>
-            <a href="mailto:mhamed.saad.ibrahim@gmail.com?subject=Acadify%20Commercial%20License%20Inquiry" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-brand-500/20 hover:bg-brand-500/30 text-brand-300 text-xs font-semibold border border-brand-500/30 transition-all">
-              <i data-lucide="shopping-bag" class="w-3.5 h-3.5"></i>
-              <span>Acquire License</span>
-            </a>
+            <div class="flex items-center gap-2">
+              <a href="https://acadify-platform.vercel.app" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-brand-500/20 hover:bg-brand-500/30 text-brand-300 text-xs font-semibold border border-brand-500/30 transition-all">
+                <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                <span>Live Demo</span>
+              </a>
+              <a href="https://mhamedsaad8.gumroad.com/l/acadify-lms" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-pink-500/20 hover:bg-pink-500/30 text-pink-300 text-xs font-semibold border border-pink-500/30 transition-all">
+                <i data-lucide="shopping-cart" class="w-3.5 h-3.5"></i>
+                <span>Buy License ($43)</span>
+              </a>
+            </div>
           </div>
         </article>
 
         <!-- CASE STUDY 2: FIXSY -->
-        <article class="project-card glass-panel rounded-2xl border border-white/10 overflow-hidden flex flex-col justify-between" data-category="mobile">
+        <article class="project-card glass-panel rounded-2xl border border-white/10 overflow-hidden flex flex-col justify-between" data-category="ai mobile">
           <div class="p-6 sm:p-8 space-y-6">
             
             <div class="flex items-start justify-between gap-4">
               <div>
                 <span class="inline-block px-2.5 py-1 rounded-md text-[11px] font-mono font-semibold bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 mb-3">
-                  ON-DEMAND MOBILE SERVICES & LOGISTICS
+                  AI-POWERED ON-DEMAND MARKETPLACE & STARTUP
                 </span>
-                <h3 class="text-2xl font-bold text-white tracking-tight">Fixsy Mobile Ecosystem</h3>
+                <h3 class="text-2xl font-bold text-white tracking-tight">Fixsy — Smart Home Services Startup</h3>
               </div>
               <span class="px-2.5 py-1 rounded-full bg-indigo-500/20 text-indigo-300 text-xs font-semibold border border-indigo-500/30 shrink-0">
-                Co-Founder & CTO
+                Founder & CTO • Live Platform
               </span>
             </div>
 
             <p class="text-sm text-gray-300 leading-relaxed">
-              Architected the end-to-end technical ecosystem for a high-concurrency home services marketplace connecting customers with verified trade technicians. Engineered cross-platform iOS & Android mobile apps utilizing Flutter and strict Clean Architecture, backed by a microservices-driven NestJS cluster.
+              Founded and architected the full-stack technical ecosystem for <strong>Fixsy</strong>, an intelligent on-demand home maintenance marketplace in Egypt. Engineered a high-speed Vite 7 & React 18 web platform featuring multimodal AI diagnosis ("الصنايعي البرنس"), Open-Meteo weather geolocations, real-time dispatch, and an installable PWA with offline caching. Backed by Flutter iOS/Android clients and a microservices cluster.
             </p>
+
+            <!-- Visual Preview -->
+            <div class="relative rounded-xl overflow-hidden border border-white/10 group shadow-2xl bg-dark-900/80">
+              <a href="https://fixsy-app.vercel.app" target="_blank" rel="noopener noreferrer" class="block relative group/img">
+                <img src="assets/images/fixsy-preview.png" alt="Fixsy Live Startup Platform" class="w-full h-48 sm:h-64 object-cover object-center transition-transform duration-500 group-hover/img:scale-[1.02]" />
+                <div class="absolute inset-0 bg-indigo-500/10 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
+                  <span class="px-3.5 py-2 rounded-lg bg-black/80 backdrop-blur-md text-white text-xs font-semibold border border-white/20 shadow-xl flex items-center gap-1.5">
+                    <i data-lucide="external-link" class="w-3.5 h-3.5 text-indigo-400"></i> Open Live Startup Web App
+                  </span>
+                </div>
+              </a>
+              <div class="absolute inset-0 bg-gradient-to-t from-dark-950 via-transparent to-transparent opacity-80 pointer-events-none"></div>
+              <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-xs pointer-events-none">
+                <span class="px-2 py-1 rounded bg-black/60 backdrop-blur-md text-white border border-white/10 font-mono text-[11px] flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-indigo-400"></span> Live Cloud Startup & PWA
+                </span>
+                <span class="text-gray-300 font-mono text-[11px] bg-black/40 px-2 py-1 rounded">Vite 7 &bull; TypeScript 5 &bull; Gemini AI</span>
+              </div>
+            </div>
 
             <div class="space-y-3 bg-dark-900/60 p-4 rounded-xl border border-white/5">
               <h4 class="text-xs font-bold text-gray-400 uppercase tracking-wider">Key Architectural Decisions:</h4>
               <ul class="text-xs text-gray-300 space-y-2">
                 <li class="flex items-center gap-2">
                   <i data-lucide="check-circle-2" class="w-4 h-4 text-indigo-400 shrink-0"></i>
-                  <span><strong>Layered Clean Architecture:</strong> Clear separation between Domain, Data, and Presentation layers for testability.</span>
+                  <span><strong>Multimodal AI Diagnostics (Gemini & Groq):</strong> Egyptian colloquial handyman persona providing instant root-cause analysis, fair price estimation, and emergency safety steps.</span>
                 </li>
                 <li class="flex items-center gap-2">
                   <i data-lucide="check-circle-2" class="w-4 h-4 text-indigo-400 shrink-0"></i>
-                  <span><strong>State Management via Riverpod:</strong> Deterministic asynchronous state flows with zero memory leaks.</span>
+                  <span><strong>Triple-Role Portal Isolation:</strong> Secure distinct portals for Clients (bookings & referrals), Technicians (job market & bidding), and Admins (live telemetry).</span>
                 </li>
                 <li class="flex items-center gap-2">
                   <i data-lucide="check-circle-2" class="w-4 h-4 text-indigo-400 shrink-0"></i>
-                  <span><strong>Real-Time Geolocation:</strong> WebSocket-powered technician dispatch, live tracking, and status transitions.</span>
+                  <span><strong>PWA Offline Architecture & Edge Deployment:</strong> Instant load times, Service Worker caching, and client-side single page routing via Vercel edge.</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-indigo-400 shrink-0"></i>
+                  <span><strong>Cross-Platform Mobile Suite:</strong> Companion mobile apps engineered in Flutter with Riverpod state management and NestJS backend.</span>
                 </li>
               </ul>
             </div>
 
             <div class="flex flex-wrap gap-2 pt-2">
+              <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-white/5 text-gray-300 border border-white/10">Vite 7</span>
+              <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-white/5 text-gray-300 border border-white/10">React 18</span>
+              <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-white/5 text-gray-300 border border-white/10">TypeScript 5</span>
+              <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-white/5 text-gray-300 border border-white/10">Gemini AI</span>
+              <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-white/5 text-gray-300 border border-white/10">PWA</span>
               <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-white/5 text-gray-300 border border-white/10">Flutter</span>
-              <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-white/5 text-gray-300 border border-white/10">Dart</span>
-              <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-white/5 text-gray-300 border border-white/10">Riverpod</span>
-              <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-white/5 text-gray-300 border border-white/10">Clean Architecture</span>
-              <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-white/5 text-gray-300 border border-white/10">NestJS</span>
-              <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-white/5 text-gray-300 border border-white/10">WebSockets</span>
+              <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-white/5 text-gray-300 border border-white/10">Leaflet Maps</span>
+              <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-white/5 text-gray-300 border border-white/10">Firebase</span>
             </div>
 
           </div>
 
-          <div class="px-6 sm:px-8 py-4 bg-white/[0.02] border-t border-white/5 flex items-center justify-between no-print">
-            <a href="https://github.com/zvinn/fixsy-flutter" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-semibold text-indigo-400 hover:text-indigo-300 transition-colors">
-              <i data-lucide="github" class="w-4 h-4"></i>
-              <span>View Flutter Codebase</span>
+          <div class="px-6 sm:px-8 py-4 bg-white/[0.02] border-t border-white/5 flex flex-wrap items-center justify-between gap-3 no-print">
+            <div class="flex items-center gap-3">
+              <a href="https://github.com/zvinn/fixsy-app" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-indigo-400 hover:text-indigo-300 transition-colors">
+                <i data-lucide="github" class="w-4 h-4"></i>
+                <span>Web Repo</span>
+              </a>
+              <span class="text-white/20">&bull;</span>
+              <a href="https://github.com/zvinn/fixsy-flutter" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-gray-400 hover:text-gray-300 transition-colors">
+                <i data-lucide="smartphone" class="w-3.5 h-3.5"></i>
+                <span>Flutter App</span>
+              </a>
+            </div>
+            <a href="https://fixsy-app.vercel.app" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-indigo-500/20 hover:bg-indigo-500/30 text-indigo-300 text-xs font-semibold border border-indigo-500/30 transition-all">
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+              <span>Launch Startup Demo</span>
             </a>
-            <span class="text-xs text-gray-400 font-mono">Mobile & Backend Ops</span>
           </div>
         </article>
 
